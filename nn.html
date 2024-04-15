@@ -1,0 +1,70 @@
+<html><head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MathJax example</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body style="font-size: xx-large;">
+  
+  <h1 style="color: blue;"> Afectuosos saludos distiguido caballero, por favor ingrese un número</h1>
+  <label>Número a : </label>
+  <input id="en1" type="number" style="font-size: xx-large;">
+  <br>
+  <br>
+  <label>Número b : </label>
+  <input id="en2" type="number" style="font-size: xx-large;">
+  <br>
+  <br>
+  <button onclick="suma()" style="font-size: xx-large;">a+b</button>
+  <button onclick="resta1()" style="font-size: xx-large;">a-b</button>
+  <button onclick="resta2()" style="font-size: xx-large;">b-a</button>
+  <button onclick="division()" style="font-size: xx-large;">a/b</button>
+  <button onclick="producto()" style="font-size: xx-large;">a*b</button>
+  <button onclick="raiz()" style="font-size: xx-large;">√a</button>
+  
+  <p id="demo1"></p>
+  <script> 
+ 	function suma(){
+		a = document.getElementById("en1").value;
+		b = document.getElementById("en2").value;
+		document.getElementById("demo1").innerHTML = Number(a) + Number(b);
+	}
+	function resta1(){
+		a = document.getElementById("en1").value;
+		b = document.getElementById("en2").value;
+		document.getElementById("demo1").innerHTML = Number(a)-Number(b);
+	}
+	function resta2(){
+		a = document.getElementById("en1").value;
+		b = document.getElementById("en2").value;
+		document.getElementById("demo1").innerHTML = Number(b)-Number(a);
+	}
+	function division(){
+		a = document.getElementById("en1").value;
+		b = document.getElementById("en2").value;
+		document.getElementById("demo1").innerHTML = Number(a)/Number(b);
+	}
+	function producto(){
+		a = document.getElementById("en1").value;
+		b = document.getElementById("en2").value;
+		document.getElementById("demo1").innerHTML = Number(a)*Number(b);
+	}
+	function raiz(){
+		a = document.getElementById("en1").value;
+		document.getElementById("demo1").innerHTML = Math.sqrt(Number(a));
+	}
+       </script>
+	<img src="descarga.jfif">
+
+
+</body>
+<p>
+  When \(a \ne 0\), there are two solutions to \(ax^2 + ex + i = 0\) and they are
+  \[x = {-e \pm \sqrt{e^2-4ai} \over 2a}.\]
+</p>
+</html>
+
+
